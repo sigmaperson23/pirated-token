@@ -1,0 +1,158 @@
+2026-11-09T21:43:13.168Z [DEBUG] MDM settings load completed in 1ms
+2026-11-09T21:43:13.197Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Program Files\ClaudeCode\managed-settings.json
+2026-11-09T21:43:13.205Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Users\sixth\Desktop\Claude\Playground\switchyard\.claude\settings.json
+2026-11-09T21:43:13.207Z [DEBUG] Broken symlink or missing file encountered for settings.json at path: C:\Users\sixth\Desktop\Claude\Playground\switchyard\.claude\settings.local.json
+2026-11-09T21:43:13.209Z [DEBUG] Cleared CA certificates cache
+2026-11-09T21:43:13.236Z [DEBUG] [init] configureGlobalMTLS starting
+2026-11-09T21:43:13.236Z [DEBUG] [init] configureGlobalMTLS complete
+2026-11-09T21:43:13.236Z [DEBUG] [init] configureGlobalAgents starting
+2026-11-09T21:43:13.236Z [DEBUG] CA certs: stores=bundled,system, extraCertsPath=C:\Users\sixth\Desktop\Claude\Playground\switchyard\mitm-ca.pem
+2026-11-09T21:43:13.238Z [DEBUG] CA certs: Loaded 118 bundled root certificates
+2026-11-09T21:43:13.257Z [DEBUG] CA certs: Dropped 8 expired certificate(s) from system store
+2026-11-09T21:43:13.257Z [DEBUG] CA certs: Loaded 92 system CA certificates
+2026-11-09T21:43:13.259Z [DEBUG] CA certs: Dropped blocked certificate 40f6af0346a99aa1cd1d555a4e9cce62c7f9634603ee406615833dc8c8d00367 from bundled
+2026-11-09T21:43:13.268Z [DEBUG] CA certs: Appended extra certificates from NODE_EXTRA_CA_CERTS (C:\Users\sixth\Desktop\Claude\Playground\switchyard\mitm-ca.pem)
+2026-11-09T21:43:13.293Z [ERROR] CA certs: Dropped the certificate with SHA-256 fingerprint E7:68:56:34:EF:AC:F6:9A:CE:93:9A:6B:25:5B:7B:4F:AB:EF:42:93:5B:50:A2:65:AC:B5:CB:60:27:E4:4E:70 and subject "C=US\nO=VeriSign\\, Inc.\nOU=Class 3 Public Primary Certification Authority": it names itself as its issuer, but its own key did not sign it, or signed it in a form that Claude Code cannot check, and no CA that chains to a root in the CA list signed it. If another root certificate of the same CA signed it, this one stays once this list holds that root certificate too. Only the lists for Claude Code's own connections take certificates from the NODE_EXTRA_CA_CERTS file. If you add that root and connections still fail, take it out again: while this list holds it, the variable below changes nothing. CLAUDE_CODE_DISABLE_SELF_NAMED_CERT_DROP=1 keeps every such certificate, whoever signed it, and can break connections that work without it.
+2026-11-09T21:43:13.293Z [ERROR] CA certs: Dropped the certificate with SHA-256 fingerprint 8B:13:DB:B2:5E:B3:39:A6:30:C7:6C:81:0D:14:B4:4B:55:2E:68:DC:10:A9:3E:82:E7:54:DA:23:F8:58:77:4A and subject "CN=Root Agency": it names itself as its issuer, but whether its own key signed it could not be checked (Error: error:0b00007d:X.509 certificate routines:OPENSSL_internal:PUBLIC_KEY_DECODE_ERROR), most likely because the runtime cannot read that key, and then TLS can verify nothing under it either, and no CA that chains to a root in the CA list signed it. If another root certificate of the same CA signed it, this one stays once this list holds that root certificate too. Only the lists for Claude Code's own connections take certificates from the NODE_EXTRA_CA_CERTS file. If you add that root and connections still fail, take it out again: while this list holds it, the variable below changes nothing. CLAUDE_CODE_DISABLE_SELF_NAMED_CERT_DROP=1 keeps every such certificate, whoever signed it, and can break connections that work without it.
+2026-11-09T21:43:13.293Z [DEBUG] CA certs: Dropped 2 certificate(s) that do not chain to a root in the CA list
+2026-11-09T21:43:13.293Z [DEBUG] mTLS: Creating HTTPS agent with custom certificates
+2026-11-09T21:43:13.298Z [DEBUG] [init] configureGlobalAgents complete
+2026-11-09T21:43:13.300Z [DEBUG] Using bash path: "C:\Program Files\Git\bin\bash.exe"
+2026-11-09T21:43:13.304Z [DEBUG] Error log sink initialized
+2026-11-09T21:43:13.332Z [DEBUG] [ToolSearch:optimistic] mode=tst, ENABLE_TOOL_SEARCH=true, result=true
+2026-11-09T21:43:13.418Z [DEBUG] [claudeai-mcp] Disabled in safe mode
+2026-11-09T21:43:13.419Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-11-09T21:43:13.434Z [DEBUG] [STARTUP] Running setup()...
+2026-11-09T21:43:13.605Z [DEBUG] Loading skills from: managed=C:\Program Files\ClaudeCode\.claude\skills, user=C:\Users\sixth\.claude\skills, project=[]
+2026-11-09T21:43:13.605Z [DEBUG] [reduced mode] Skipping skill dir discovery
+2026-11-09T21:43:13.687Z [DEBUG] Loaded 4 installed plugins from C:\Users\sixth\.claude\plugins\installed_plugins.json
+2026-11-09T21:43:13.720Z [INFO] [uds-messaging] Listening: \\.\pipe\LOCAL\cc-msg-828194635860279ee5bebdd075e1afe0
+2026-11-09T21:43:13.729Z [DEBUG] [uds-messaging] Inject messages (auth line REQUIRED here; a pipe is not reachable via socat/AF_UNIX): node -e "const c=require('net').connect(process.argv[1],()=>{c.write(JSON.stringify({type:'auth',token:[REDACTED]})+'\n'+JSON.stringify({type:'user',message:{role:'user',content:'hello'}})+'\n');c.end()})" "\\.\pipe\LOCAL\cc-msg-828194635860279ee5bebdd075e1afe0"
+2026-11-09T21:43:13.729Z [DEBUG] [uds-messaging] Connect when the data is ready (run the command first, then connect and write its output as ONE line, as in the node recipe above): a connection that sends no complete line within 30000 ms is closed
+2026-11-09T21:43:13.734Z [DEBUG] Error log sink initialized
+2026-11-09T21:43:13.738Z [DEBUG] [STARTUP] setup() completed in 304ms
+2026-11-09T21:43:13.741Z [DEBUG] Cleared mTLS configuration cache
+2026-11-09T21:43:13.741Z [DEBUG] Cleared proxy agent cache
+2026-11-09T21:43:13.848Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-11-09T21:43:13.858Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 30 bundled skills, 1 builtin plugin skills
+2026-11-09T21:43:13.888Z [DEBUG] [STARTUP] Commands and agents loaded in 40ms
+2026-11-09T21:43:13.901Z [DEBUG] Git remote URL: null
+2026-11-09T21:43:13.901Z [DEBUG] No git remote URL found
+2026-11-09T21:43:13.947Z [DEBUG] Found 6 plugins (4 enabled, 2 disabled)
+2026-11-09T21:43:13.950Z [DEBUG] Safe mode: installed plugins are disabled, none of their hooks or hooks modules load; built-in plugins load regardless
+2026-11-09T21:43:13.959Z [DEBUG] cc-plugin-sec-default@builtin not seated: no managed settings and not a Team or Enterprise organization (max)
+2026-11-09T21:43:13.966Z [DEBUG] plugin cc-plugin-agents-md: no pluginConfigs["agents-md@builtin" or "cc-plugin-agents-md@builtin"].options in user, --settings or managed settings (project settings are not read); every option is its default
+2026-11-09T21:43:13.967Z [DEBUG] cc-plugin-telemetry: hooks telemetry for: anthropic, collector
+2026-11-09T21:43:13.969Z [DEBUG] hooks native host made (for the plugins the binary carries)
+2026-11-09T21:43:13.974Z [DEBUG] hooks module cc-plugin-agents-md@builtin loaded (native, environment 1, tier builtin); events: session.start,prompt.context,command.run,session.compact,prompt.submit,turn.start,turn.complete,agent.spawn,tool.call,prompt.mention
+2026-11-09T21:43:13.981Z [DEBUG] hooks module cc-plugin-telemetry@builtin loaded (native, environment 2, tier builtin); events: telemetry.*,telemetry.log,telemetry.mark,session.start,session.end,engine.create
+2026-11-09T21:43:13.985Z [DEBUG] hooks module cc-plugin-plugin-authoring@builtin loaded (native, environment 3, tier builtin); events: skill.prompt,tool.check,tool.call
+2026-11-09T21:43:13.989Z [DEBUG] hooks module cc-plugin-privacy@builtin loaded (native, environment 4, tier builtin); events: tool.check
+2026-11-09T21:43:13.994Z [DEBUG] hooks module cc-plugin-telemetry@builtin engine.create settled in 3.1ms (native hop, next() included)
+2026-11-09T21:43:13.995Z [DEBUG] engine.create: no plugin-provided interfaces; $ built for cc-plugin-agents-md,cc-plugin-telemetry,cc-plugin-plugin-authoring,cc-plugin-privacy
+2026-11-09T21:43:13.998Z [DEBUG] plugin.register: cc-plugin-agents-md (builtin, cc-plugin-agents-md@builtin), judged by core alone: admitted
+2026-11-09T21:43:13.998Z [DEBUG] plugin.register: cc-plugin-telemetry (builtin, cc-plugin-telemetry@builtin), judged by core alone: admitted
+2026-11-09T21:43:13.999Z [DEBUG] plugin.register: cc-plugin-plugin-authoring (builtin, cc-plugin-plugin-authoring@builtin), judged by core alone: admitted
+2026-11-09T21:43:13.999Z [DEBUG] plugin.register: cc-plugin-privacy (builtin, cc-plugin-privacy@builtin), judged by core alone: admitted
+2026-11-09T21:43:14.002Z [DEBUG] Registered 0 hooks from 4 plugins
+2026-11-09T21:43:14.003Z [DEBUG] settings.read: the engine's merge was raised (the loaded plugins changed) in 0.3 ms; 0 keys answered otherwise than the files.
+2026-11-09T21:43:14.003Z [DEBUG] settings.read: the engine's merge is not raised again (the loaded plugins changed): neither the loaded plugins nor the settings changed.
+2026-11-09T21:43:14.021Z [DEBUG] [servedCatalog] primary: using served rows (13 rows via cache over the org route, fetched 49s ago); the served list replaces the compiled picker for this session
+2026-11-09T21:43:14.028Z [DEBUG] Starting background startup prefetches
+2026-11-09T21:43:14.028Z [DEBUG] [Bootstrap] Fetching
+2026-11-09T21:43:14.030Z [DEBUG] Passes: Using fresh cached eligibility data
+2026-11-09T21:43:14.037Z [DEBUG] [STARTUP] MCP configs resolved in 2ms (awaited at +618ms)
+2026-11-09T21:43:14.038Z [DEBUG] Artifacts MCP server not added: safe_or_bare_mode
+2026-11-09T21:43:14.047Z [DEBUG] Cleared mTLS configuration cache
+2026-11-09T21:43:14.047Z [DEBUG] Cleared proxy agent cache
+2026-11-09T21:43:14.048Z [DEBUG] Skipping plugin hooks - safe mode disables installed plugins (managed settings-file hooks still run; built-in plugins load regardless)
+2026-11-09T21:43:14.053Z [DEBUG] All plugins already exist, skipping migration
+2026-11-09T21:43:14.056Z [DEBUG] Initialized versioned plugins system with 4 plugins
+2026-11-09T21:43:14.067Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-09T21:43:14.068Z [DEBUG] [MCP] --mcp-config servers running fully async (nonblocking)
+2026-11-09T21:43:14.068Z [DEBUG] [MCP] claude.ai connectors running fully async (nonblocking)
+2026-11-09T21:43:14.069Z [DEBUG] [auto-mode] verifyAutoModeGateAccess: enabledState=enabled disabledBySettings=false model=claude-opus-5-5 modelSupported=true disableFastModeBreakerFires=false carouselAvailable=true canEnterAuto=true
+2026-11-09T21:43:14.069Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-11-09T21:43:14.069Z [DEBUG] [3P telemetry] isTelemetryEnabled=false (CLAUDE_CODE_ENABLE_TELEMETRY=undefined)
+2026-11-09T21:43:14.119Z [DEBUG] [3P telemetry] Event dropped (no event logger initialized): plugin_loaded
+2026-11-09T21:43:14.123Z [DEBUG] [event-loop-stall] detector started (interval=200ms, threshold=500ms)
+2026-11-09T21:43:14.128Z [DEBUG] Grove: Using fresh cached config
+2026-11-09T21:43:14.135Z [DEBUG] Grove: the server recently confirmed a Consumer Terms answer; not asking again
+2026-11-09T21:43:14.160Z [DEBUG] [ScheduledTasks] scheduler start() — enabled=false, hasTasks=false
+2026-11-09T21:43:14.164Z [DEBUG] session.start: raised (surface none, not interactive)
+2026-11-09T21:43:14.178Z [DEBUG] hooks module cc-plugin-telemetry@builtin session.start settled in 12.8ms (native link, next() included)
+2026-11-09T21:43:14.180Z [DEBUG] hooks module cc-plugin-agents-md@builtin session.start settled in 15.1ms (native link, next() included)
+2026-11-09T21:43:14.198Z [DEBUG] installPluginsForHeadless: starting
+2026-11-09T21:43:14.199Z [DEBUG] installPluginsForHeadless: no marketplaces declared
+2026-11-09T21:43:14.207Z [DEBUG] hooks module cc-plugin-telemetry@builtin (native): telemetry.log nested in cc-plugin-agents-md
+2026-11-09T21:43:14.216Z [DEBUG] hooks module cc-plugin-telemetry@builtin telemetry.log settled in 8.4ms (native link, next() included)
+2026-11-09T21:43:14.216Z [DEBUG] cc-plugin-telemetry (builtin) answered telemetry.log without next() in 9.5ms; nothing beneath it ran for this dispatch
+2026-11-09T21:43:14.228Z [DEBUG] [sessionRegistry] sweep permitted (domain win32:desktop-q8lf9hi)
+2026-11-09T21:43:14.228Z [DEBUG] Preserving file permissions: 100666
+2026-11-09T21:43:14.228Z [DEBUG] Writing to temp file: C:\Users\sixth\.claude.json.tmp.19600.65550e3f14ec
+2026-11-09T21:43:14.268Z [DEBUG] Watching for changes in skill/command directories: C:\Users\sixth\.claude\skills, C:\Users\sixth\.claude\skills\synced, C:\Users\sixth\.claude\agents...
+2026-11-09T21:43:14.313Z [DEBUG] [servedCatalog] shadow compare logged (fetch=cache_fresh, rows=13, source=served)
+2026-11-09T21:43:14.313Z [DEBUG] [servedCatalog] primary: served list replaces the compiled picker; every compiled row is served
+2026-11-09T21:43:14.317Z [DEBUG] Watching C:\Users\sixth\Desktop\Claude\Playground\switchyard for C:\Users\sixth\Desktop\Claude\Playground\switchyard\.claude to appear
+2026-11-09T21:43:14.317Z [DEBUG] Watching for changes in setting files C:\Users\sixth\.claude\settings.json...
+2026-11-09T21:43:14.319Z [DEBUG] Applied original permissions to temp file
+2026-11-09T21:43:14.357Z [DEBUG] Keeping C:\Users\sixth\.claude\plugins\cache\claude-plugins-official\claude-code-setup: it still holds a directory, a symlink, a versioned archive or an entry of unknown type
+2026-11-09T21:43:14.359Z [DEBUG] Temp file written successfully, size: 150822 bytes
+2026-11-09T21:43:14.359Z [DEBUG] Renaming C:\Users\sixth\.claude.json.tmp.19600.65550e3f14ec to C:\Users\sixth\.claude.json
+2026-11-09T21:43:14.366Z [DEBUG] File C:\Users\sixth\.claude.json written atomically
+2026-11-09T21:43:14.390Z [DEBUG] Keeping C:\Users\sixth\.claude\plugins\cache\claude-plugins-official\claude-security: it still holds a directory, a symlink, a versioned archive or an entry of unknown type
+2026-11-09T21:43:14.501Z [DEBUG] Keeping C:\Users\sixth\.claude\plugins\cache\claude-plugins-official\frontend-design: it still holds a directory, a symlink, a versioned archive or an entry of unknown type
+2026-11-09T21:43:14.510Z [DEBUG] Keeping C:\Users\sixth\.claude\plugins\cache\claude-plugins-official\rust-analyzer-lsp: it still holds a directory, a symlink, a versioned archive or an entry of unknown type
+2026-11-09T21:43:14.516Z [DEBUG] Keeping C:\Users\sixth\.claude\plugins\cache\claude-plugins-official: it still holds a directory, a symlink, a versioned archive or an entry of unknown type
+2026-11-09T21:43:14.591Z [DEBUG] Ripgrep first use test: PASSED (mode=embedded, path=C:\Users\sixth\.local\bin\claude.exe)
+2026-11-09T21:43:14.800Z [DEBUG] [fs.watch probe] verdict: delivers
+2026-11-09T21:43:14.835Z [DEBUG] Org fast mode: disabled (extra_usage_disabled)
+2026-11-09T21:43:14.857Z [DEBUG] [mcp-registry] Loaded 294 official MCP URLs (legacy)
+2026-11-09T21:43:14.861Z [DEBUG] [Bootstrap] Fetch ok
+2026-11-09T21:43:14.862Z [DEBUG] [Bootstrap] Cache updated, persisting to disk
+2026-11-09T21:43:14.869Z [DEBUG] Preserving file permissions: 100666
+2026-11-09T21:43:14.869Z [DEBUG] Writing to temp file: C:\Users\sixth\.claude.json.tmp.19600.da57d1335964
+2026-11-09T21:43:14.870Z [DEBUG] Applied original permissions to temp file
+2026-11-09T21:43:14.878Z [DEBUG] Temp file written successfully, size: 153376 bytes
+2026-11-09T21:43:14.878Z [DEBUG] Renaming C:\Users\sixth\.claude.json.tmp.19600.da57d1335964 to C:\Users\sixth\.claude.json
+2026-11-09T21:43:14.879Z [DEBUG] File C:\Users\sixth\.claude.json written atomically
+2026-11-09T21:43:14.885Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): project memory is off
+2026-11-09T21:43:14.885Z [DEBUG] $.fs.ancestors (cc-plugin-agents-md): project memory is off
+2026-11-09T21:43:14.885Z [DEBUG] hooks module cc-plugin-telemetry@builtin (native): telemetry.log nested in cc-plugin-agents-md#1
+2026-11-09T21:43:14.886Z [DEBUG] hooks module cc-plugin-telemetry@builtin (native): telemetry.mark nested in cc-plugin-agents-md#1
+2026-11-09T21:43:14.886Z [DEBUG] hooks module cc-plugin-telemetry@builtin telemetry.log settled in 0.8ms (native link, next() included)
+2026-11-09T21:43:14.886Z [DEBUG] hooks module cc-plugin-telemetry@builtin telemetry.mark settled in 0.2ms (native link, next() included)
+2026-11-09T21:43:14.886Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.context settled in 3.1ms (native link, next() included)
+2026-11-09T21:43:14.886Z [DEBUG] cc-plugin-telemetry (builtin) answered telemetry.mark without next() in 0.4ms; nothing beneath it ran for this dispatch
+2026-11-09T21:43:14.894Z [DEBUG] Hooks: checkForNewResponses returning 0 responses, 0 hooks still pending
+2026-11-09T21:43:14.911Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-09T21:43:14.912Z [DEBUG] [session-notices] advertise=false mode=bypassPermissions flag=true(payload) pollChannel=false ownEventsOnly=false remote=false remoteEnv=false nonInteractive=true
+2026-11-09T21:43:14.917Z [DEBUG] [engine] turn 1 start
+2026-11-09T21:43:14.920Z [DEBUG] hooks module cc-plugin-agents-md@builtin turn.start settled in 3.3ms (native link, next() included)
+2026-11-09T21:43:14.920Z [DEBUG] hooks module cc-plugin-agents-md@builtin prompt.submit settled in 18.0ms (native link, next() included)
+2026-11-09T21:43:14.925Z [DEBUG] [AdvisorTool] Server-side tool enabled with claude-opus-5-5 as the advisor model
+2026-11-09T21:43:14.941Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.321.f86; cc_entrypoint=sdk-cli; cch=00000; cc_prompt_id=d75eead7-5295-4e71-8881-2ada22dd0e1c; cc_turn_origin=sdk; cc_prompt_index=0; cc_turn_index=1;
+2026-11-09T21:43:14.942Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-09T21:43:14.949Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-09T21:43:14.951Z [DEBUG] [API:timing] dispatching to firstParty model=claude-opus-5-5
+2026-11-09T21:43:14.952Z [DEBUG] [dispatch] sent anthropic-dispatch-id=v2d
+2026-11-09T21:43:14.999Z [DEBUG] [API REQUEST] /v1/messages x-client-request-id=abff2484-7608-4930-b439-ca8d05329b53 source=sdk
+2026-11-09T21:43:15.005Z [DEBUG] $.store.set (cc-plugin-agents-md@builtin): usage-rows-queued
+2026-11-09T21:43:15.297Z [DEBUG] Preserving file permissions: 100666
+2026-11-09T21:43:15.297Z [DEBUG] Writing to temp file: C:\Users\sixth\.claude.json.tmp.19600.f0871baf9174
+2026-11-09T21:43:15.298Z [DEBUG] Applied original permissions to temp file
+2026-11-09T21:43:15.299Z [DEBUG] Temp file written successfully, size: 153377 bytes
+2026-11-09T21:43:15.299Z [DEBUG] Renaming C:\Users\sixth\.claude.json.tmp.19600.f0871baf9174 to C:\Users\sixth\.claude.json
+2026-11-09T21:43:15.300Z [DEBUG] File C:\Users\sixth\.claude.json written atomically
+2026-11-09T21:43:15.504Z [DEBUG] Stream started - received first chunk
+2026-11-09T21:43:15.504Z [DEBUG] [API:timing] first byte after 556ms
+2026-11-09T21:43:15.534Z [DEBUG] [engine] turn 1 end (turns=1 usage in=2 out=4 cost=$0.0002 api=581ms stop=end_turn resultLen=2)
+2026-11-09T21:43:15.534Z [DEBUG] Fast mode unavailable: Fast mode is not available in the Agent SDK
+2026-11-09T21:43:15.539Z [DEBUG] hooks module cc-plugin-agents-md@builtin turn.complete settled in 0.3ms (native link, next() included)
+2026-11-09T21:43:15.546Z [DEBUG] [uds-messaging] Shutting down
+2026-11-09T21:43:15.576Z [DEBUG] $.session (cc-plugin-telemetry): no session bound; id, cwd and model answered from the process
+2026-11-09T21:43:15.578Z [DEBUG] $.session (cc-plugin-telemetry): no session bound; id, cwd and model answered from the process
+2026-11-09T21:43:15.581Z [DEBUG] $.http.fetch (cc-plugin-telemetry): POST https://api.anthropic.com/api/event_logging/v2/batch
+2026-11-09T21:43:15.887Z [DEBUG] $.http.fetch (cc-plugin-telemetry): 200 in 307ms, 39 chars
+2026-11-09T21:43:15.887Z [DEBUG] [cc-plugin-telemetry] $.ui.log (to debug): telemetry: sent 3 row(s)
+2026-11-09T21:43:15.887Z [DEBUG] hooks module cc-plugin-telemetry@builtin session.end settled in 327.4ms (native link, next() included)

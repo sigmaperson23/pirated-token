@@ -1,0 +1,37 @@
+{"phase": "req", "ts": 1794090787.3013623, "method": "GET", "url": "https://api.bridgemind.ai/one/runtime-config"}
+{"phase": "req", "ts": 1794090787.302375, "method": "GET", "url": "https://api.bridgemind.ai/auth/me"}
+{"phase": "resp", "ts": 1794090787.5912921, "method": "GET", "url": "https://api.bridgemind.ai/one/runtime-config", "status": 404}
+{"phase": "resp", "ts": 1794090787.6770277, "method": "GET", "url": "https://api.bridgemind.ai/auth/me", "status": 200}
+{"phase": "err", "ts": 1794090787.6775966, "e": "TypeError(\"log() missing 1 required positional argument: 'd'\")"}
+{"phase": "req", "ts": 1794090787.6803703, "method": "GET", "url": "https://api.bridgemind.ai/one/entitlement"}
+{"phase": "resp", "ts": 1794090788.0553076, "method": "GET", "url": "https://api.bridgemind.ai/one/entitlement", "status": 403}
+{"phase": "req", "ts": 1794090788.415421, "method": "POST", "url": "https://o4510171394408448.ingest.us.sentry.io/api/4512070354075648/envelope/"}
+{"phase": "req", "ts": 1794090788.419507, "method": "GET", "url": "https://api.bridgemind.ai/credits/balance"}
+{"phase": "resp", "ts": 1794090788.453922, "method": "POST", "url": "https://o4510171394408448.ingest.us.sentry.io/api/4512070354075648/envelope/", "status": 200}
+{"phase": "resp", "ts": 1794090789.2797005, "method": "GET", "url": "https://api.bridgemind.ai/credits/balance", "status": 200}
+{"phase": "req", "ts": 1794090807.1790552, "method": "GET", "url": "https://downloads.bridgemind.ai/bridgemind-one/latest/windows/latest.json"}
+{"phase": "resp", "ts": 1794090808.1733806, "method": "GET", "url": "https://downloads.bridgemind.ai/bridgemind-one/latest/windows/latest.json", "status": 200}
+{"ts": 1794091026.7518375, "phase": "resp", "url": "https://api.bridgemind.ai/one/runtime-config", "status": 404}
+{"ts": 1794091026.8460045, "phase": "resp", "url": "https://api.bridgemind.ai/auth/me", "status": 200}
+{"ts": 1794091026.8465247, "phase": "rewrote_me_only"}
+{"ts": 1794091027.1794186, "phase": "resp", "url": "https://api.bridgemind.ai/one/entitlement", "status": 403}
+{"ts": 1794091042.1548226, "phase": "resp", "url": "https://api.bridgemind.ai/auth/desktop/refresh", "status": 200}
+{"ts": 1794091046.8844655, "phase": "resp", "url": "https://downloads.bridgemind.ai/bridgemind-one/latest/windows/latest.json", "status": 200}
+{"ts": 1794091058.1594949, "phase": "resp", "url": "https://api.bridgemind.ai/auth/desktop/refresh", "status": 200}
+{"ts": 1794091074.0981197, "phase": "resp", "url": "https://api.bridgemind.ai/auth/desktop/refresh", "status": 200}
+{"ts": 1794091088.5745187, "phase": "resp", "url": "https://api.bridgemind.ai/one/runtime-config", "status": 404}
+{"ts": 1794091088.6575463, "phase": "resp", "url": "https://api.bridgemind.ai/auth/me", "status": 200}
+{"ts": 1794091088.6581125, "phase": "rw_me"}
+{"ts": 1794091089.0286865, "phase": "resp", "url": "https://api.bridgemind.ai/one/entitlement", "status": 403}
+{"ts": 1794091089.0291498, "phase": "rw_ent"}
+{"ts": 1794091089.585563, "phase": "resp", "url": "https://o4510171394408448.ingest.us.sentry.io/api/4512070354075648/envelope/", "status": 200}
+{"ts": 1794091089.6620986, "phase": "resp", "url": "https://api.bridgemind.ai/credits/balance", "status": 200}
+{"ts": 1794091108.150073, "phase": "resp", "url": "https://downloads.bridgemind.ai/bridgemind-one/latest/windows/latest.json", "status": 200}
+{"ts": 1794091156.7795672, "phase": "resp", "url": "https://api.bridgemind.ai/one/runtime-config", "status": 404}
+{"ts": 1794091156.8400204, "phase": "resp", "url": "https://api.bridgemind.ai/auth/me", "status": 200}
+{"ts": 1794091156.8408008, "phase": "rw_me"}
+{"ts": 1794091157.188837, "phase": "resp", "url": "https://api.bridgemind.ai/one/entitlement", "status": 403}
+{"ts": 1794091157.1893928, "phase": "rw_ent"}
+{"ts": 1794091157.556107, "phase": "resp", "url": "https://o4510171394408448.ingest.us.sentry.io/api/4512070354075648/envelope/", "status": 200}
+{"ts": 1794091158.4021993, "phase": "resp", "url": "https://api.bridgemind.ai/credits/balance", "status": 200}
+{"ts": 1794091177.124648, "phase": "resp", "url": "https://downloads.bridgemind.ai/bridgemind-one/latest/windows/latest.json", "status": 200}

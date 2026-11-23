@@ -1,0 +1,4 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6e8fed86-a02a-5393-b588-e49ec16228d0")}catch(e){}}();
+import{i as e,t}from"./react-SIfiwpqq.js";import{n,t as r}from"./contextMenu-B4B7zGOw.js";var i=e(t(),1);function a(){let[e,t]=(0,i.useState)(null),a=(0,i.useCallback)((e,n)=>{n.preventDefault(),t({target:e,anchor:r(n),restoreTo:n.currentTarget})},[]);return{current:e,openAtPointer:a,openFromButton:(0,i.useCallback)((e,n)=>{t({target:e,anchor:n,restoreTo:n})},[]),close:(0,i.useCallback)(()=>t(null),[]),contextProps:(0,i.useCallback)(e=>({onContextMenu:t=>a(e,t),onKeyDown:t=>{n(t)&&a(e,t)}}),[a])}}export{a as t};
+//# debugId=6e8fed86-a02a-5393-b588-e49ec16228d0

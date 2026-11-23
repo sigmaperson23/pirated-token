@@ -1,0 +1,436 @@
+[15:17:53.552] Loading script C:\Users\sixth\Desktop\Claude\Playground\switchyard\addon.py
+[15:17:53.555] HTTP(S) proxy listening at *:8080.
+[15:17:53.957][127.0.0.1:14861] client connect
+[15:17:53.961][127.0.0.1:14861] client disconnect
+[15:17:59.045][127.0.0.1:10623] client connect
+[15:17:59.047][127.0.0.1:10624] client connect
+[15:17:59.135][127.0.0.1:10623] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:17:59.136][127.0.0.1:10624] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+127.0.0.1:10624: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:10623: GET https://api.bridgemind.ai/auth/me
+              << 401 Unauthorized 280b
+127.0.0.1:10623: POST https://api.bridgemind.ai/auth/desktop/refresh
+              << 200 OK 3.8k
+127.0.0.1:10624: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:10623: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:10623: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:18:02.161][127.0.0.1:51917] client connect
+[15:18:02.212][127.0.0.1:51917] server connect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+[15:18:02.449][127.0.0.1:51920] client connect
+[15:18:02.461][127.0.0.1:51920] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+127.0.0.1:51917: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+127.0.0.1:51920: GET https://api.bridgemind.ai/credits/balance
+              << 200 OK 156b
+[15:18:19.042][127.0.0.1:43701] client connect
+[15:18:19.130][127.0.0.1:43701] server connect downloads.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+127.0.0.1:43701: GET https://downloads.bridgemind.ai/bridgemind-one/latest/w…
+              << 200 OK 1.4k
+[15:18:20.825][127.0.0.1:43701] client disconnect
+[15:18:20.826][127.0.0.1:43701] server disconnect downloads.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+[15:19:32.873][127.0.0.1:51920] client disconnect
+[15:19:32.874][127.0.0.1:51920] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:19:33.126][127.0.0.1:47494] client connect
+[15:19:33.127][127.0.0.1:10623] client disconnect
+[15:19:33.127][127.0.0.1:47495] client connect
+[15:19:33.128][127.0.0.1:10623] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:19:33.130][127.0.0.1:10624] client disconnect
+[15:19:33.131][127.0.0.1:10624] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:19:33.136][127.0.0.1:47495] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:19:33.137][127.0.0.1:47494] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+127.0.0.1:47495: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:47494: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:47494: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:19:34.444][127.0.0.1:47498] client connect
+[15:19:34.445][127.0.0.1:51917] client disconnect
+[15:19:34.446][127.0.0.1:51917] server disconnect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+[15:19:34.454][127.0.0.1:47498] server connect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+127.0.0.1:47498: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+127.0.0.1:47495: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:47494: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:47494: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+127.0.0.1:47495: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:47494: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:47494: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:19:45.176][127.0.0.1:31331] client connect
+[15:19:45.207][127.0.0.1:31331] server connect platform.claude.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:31331: POST https://platform.claude.com/v1/oauth/token
+              << 200 OK 515b
+[15:19:45.789][127.0.0.1:31331] server disconnect platform.claude.com:443 ([2607:6bc0::10]:443)
+[15:19:45.791][127.0.0.1:31331] client disconnect
+[15:19:45.944][127.0.0.1:38386] client connect
+[15:19:45.957][127.0.0.1:38388] client connect
+[15:19:45.959][127.0.0.1:38389] client connect
+[15:19:45.960][127.0.0.1:38386] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:45.963][127.0.0.1:38390] client connect
+[15:19:45.965][127.0.0.1:38391] client connect
+[15:19:45.980][127.0.0.1:38390] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:45.981][127.0.0.1:38388] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:45.983][127.0.0.1:38391] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:45.984][127.0.0.1:38389] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:38386: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+ << Client disconnected.
+[15:19:46.274][127.0.0.1:38386] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:46.275][127.0.0.1:38386] client disconnect
+127.0.0.1:38391: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+ << Client disconnected.
+127.0.0.1:38390: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+ << Client disconnected.
+127.0.0.1:38389: GET https://api.anthropic.com/api/organizations/95b75723-5e…
+ << Client disconnected.
+127.0.0.1:38388: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+ << Client disconnected.
+[15:19:46.282][127.0.0.1:38391] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:46.283][127.0.0.1:38391] client disconnect
+[15:19:46.284][127.0.0.1:38390] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:46.284][127.0.0.1:38390] client disconnect
+[15:19:46.285][127.0.0.1:38389] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:46.285][127.0.0.1:38389] client disconnect
+[15:19:46.286][127.0.0.1:38388] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:46.287][127.0.0.1:38388] client disconnect
+[15:19:48.421][127.0.0.1:33205] client connect
+[15:19:48.434][127.0.0.1:33205] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:48.660][127.0.0.1:33207] client connect
+[15:19:48.672][127.0.0.1:33207] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:48.847][127.0.0.1:33209] client connect
+[15:19:48.856][127.0.0.1:33209] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:48.982][127.0.0.1:33211] client connect
+[15:19:49.006][127.0.0.1:33211] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.053][127.0.0.1:33213] client connect
+[15:19:49.062][127.0.0.1:33213] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33207: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+              << 200 OK 28.3k
+[15:19:49.073][127.0.0.1:33215] client connect
+[15:19:49.077][127.0.0.1:33217] client connect
+[15:19:49.084][127.0.0.1:33215] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.096][127.0.0.1:33217] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33205: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+              << 200 OK 28.3k
+[15:19:49.210][127.0.0.1:9514] client connect
+[15:19:49.229][127.0.0.1:9514] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33209: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+              << 200 OK 28.3k
+[15:19:49.264][127.0.0.1:9516] client connect
+[15:19:49.284][127.0.0.1:9516] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.286][127.0.0.1:9518] client connect
+[15:19:49.296][127.0.0.1:9520] client connect
+[15:19:49.298][127.0.0.1:9518] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.304][127.0.0.1:9520] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.323][127.0.0.1:9522] client connect
+[15:19:49.341][127.0.0.1:9522] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.368][127.0.0.1:9524] client connect
+[15:19:49.381][127.0.0.1:9524] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.383][127.0.0.1:9526] client connect
+[15:19:49.392][127.0.0.1:9526] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.395][127.0.0.1:9528] client connect
+[15:19:49.411][127.0.0.1:9528] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33211: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+              << 200 OK 6.7k
+[15:19:49.456][127.0.0.1:33211] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33213: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+              << 200 OK 69b
+[15:19:49.461][127.0.0.1:33211] client disconnect
+127.0.0.1:33217: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+              << 200 OK 352b
+[15:19:49.463][127.0.0.1:33213] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.464][127.0.0.1:33217] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.464][127.0.0.1:33213] client disconnect
+[15:19:49.465][127.0.0.1:33217] client disconnect
+127.0.0.1:33215: GET https://api.anthropic.com/api/organizations/95b75723-5e…
+              << 200 OK 1.7k
+[15:19:49.500][127.0.0.1:33215] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.501][127.0.0.1:33215] client disconnect
+[15:19:49.636][127.0.0.1:9530] client connect
+[15:19:49.637][127.0.0.1:9531] client connect
+[15:19:49.660][127.0.0.1:9531] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.661][127.0.0.1:9530] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:9516: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 69b
+[15:19:49.671][127.0.0.1:9516] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.674][127.0.0.1:9516] client disconnect
+127.0.0.1:9520: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 352b
+[15:19:49.679][127.0.0.1:9520] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.687][127.0.0.1:9520] client disconnect
+127.0.0.1:9518: GET https://api.anthropic.com/api/organizations/95b75723-5e…
+             << 200 OK 1.7k
+[15:19:49.699][127.0.0.1:9518] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.702][127.0.0.1:9518] client disconnect
+127.0.0.1:9514: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 6.7k
+[15:19:49.735][127.0.0.1:9514] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.736][127.0.0.1:9514] client disconnect
+127.0.0.1:9524: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 69b
+[15:19:49.758][127.0.0.1:9524] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.758][127.0.0.1:9524] client disconnect
+127.0.0.1:9528: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 352b
+[15:19:49.770][127.0.0.1:9528] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.773][127.0.0.1:45044] client connect
+[15:19:49.774][127.0.0.1:45045] client connect
+[15:19:49.775][127.0.0.1:9528] client disconnect
+[15:19:49.791][127.0.0.1:45045] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.793][127.0.0.1:45044] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:9522: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+             << 200 OK 6.7k
+[15:19:49.799][127.0.0.1:9522] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.801][127.0.0.1:9522] client disconnect
+127.0.0.1:9526: GET https://api.anthropic.com/api/organizations/95b75723-5e…
+             << 200 OK 1.7k
+[15:19:49.804][127.0.0.1:9526] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.811][127.0.0.1:9526] client disconnect
+[15:19:49.871][127.0.0.1:45048] client connect
+[15:19:49.873][127.0.0.1:45049] client connect
+[15:19:49.891][127.0.0.1:45048] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:49.893][127.0.0.1:45049] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:9531: GET https://api.anthropic.com/api/claude_code_grove
+             << 200 OK 122b
+[15:19:50.036][127.0.0.1:9531] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.037][127.0.0.1:9531] client disconnect
+127.0.0.1:9530: GET https://api.anthropic.com/api/oauth/account/settings
+             << 200 OK 1.7k
+[15:19:50.073][127.0.0.1:9530] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.074][127.0.0.1:9530] client disconnect
+127.0.0.1:45045: GET https://api.anthropic.com/api/claude_code_grove
+              << 200 OK 122b
+[15:19:50.152][127.0.0.1:45045] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.153][127.0.0.1:45045] client disconnect
+127.0.0.1:45049: GET https://api.anthropic.com/api/claude_code_grove
+              << 200 OK 122b
+[15:19:50.249][127.0.0.1:45049] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.251][127.0.0.1:45049] client disconnect
+[15:19:50.269][127.0.0.1:60389] client connect
+[15:19:50.270][127.0.0.1:60390] client connect
+[15:19:50.277][127.0.0.1:60390] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.279][127.0.0.1:60389] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:45044: GET https://api.anthropic.com/api/oauth/account/settings
+              << 200 OK 1.7k
+[15:19:50.298][127.0.0.1:45044] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:45048: GET https://api.anthropic.com/api/oauth/account/settings
+              << 200 OK 1.7k
+[15:19:50.301][127.0.0.1:45048] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.303][127.0.0.1:45044] client disconnect
+[15:19:50.304][127.0.0.1:45048] client disconnect
+[15:19:50.442][127.0.0.1:35091] client connect
+[15:19:50.444][127.0.0.1:35092] client connect
+[15:19:50.453][127.0.0.1:35093] client connect
+[15:19:50.455][127.0.0.1:35094] client connect
+[15:19:50.462][127.0.0.1:35091] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.464][127.0.0.1:35092] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.466][127.0.0.1:35093] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.468][127.0.0.1:35094] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.550][127.0.0.1:21812] client connect
+[15:19:50.562][127.0.0.1:21812] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.668][127.0.0.1:21814] client connect
+[15:19:50.687][127.0.0.1:21816] client connect
+[15:19:50.700][127.0.0.1:21814] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.717][127.0.0.1:21816] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:60390: GET https://api.anthropic.com/api/claude_code_penguin_mode
+              << 200 OK 62b
+[15:19:50.995][127.0.0.1:60390] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:50.997][127.0.0.1:60390] client disconnect
+127.0.0.1:35092: GET https://api.anthropic.com/api/claude_code_penguin_mode
+              << 200 OK 62b
+[15:19:51.011][127.0.0.1:35092] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:51.012][127.0.0.1:35092] client disconnect
+127.0.0.1:60389: GET https://api.anthropic.com/api/claude_cli/bootstrap?entr…
+              << 200 OK 471b
+[15:19:51.036][127.0.0.1:60389] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:51.038][127.0.0.1:60389] client disconnect
+127.0.0.1:35094: GET https://api.anthropic.com/api/claude_code_penguin_mode
+              << 200 OK 62b
+127.0.0.1:35093: GET https://api.anthropic.com/api/claude_cli/bootstrap?entr…
+              << 200 OK 471b
+[15:19:51.061][127.0.0.1:35094] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:51.062][127.0.0.1:35093] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:51.064][127.0.0.1:35094] client disconnect
+[15:19:51.064][127.0.0.1:35093] client disconnect
+127.0.0.1:35091: GET https://api.anthropic.com/api/claude_cli/bootstrap?entr…
+              << 200 OK 471b
+[15:19:51.132][127.0.0.1:35091] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:51.134][127.0.0.1:35091] client disconnect
+127.0.0.1:21814: POST https://api.anthropic.com/v1/messages?beta=true
+              << 200 OK 338b
+127.0.0.1:21816: POST https://api.anthropic.com/v1/messages?beta=true
+              << 200 OK 339b
+127.0.0.1:21812: POST https://api.anthropic.com/v1/messages?beta=true
+              << 200 OK 336b
+[15:19:52.447][127.0.0.1:18591] client connect
+[15:19:52.463][127.0.0.1:18592] client connect
+[15:19:52.535][127.0.0.1:18593] client connect
+[15:19:52.723][127.0.0.1:18594] client connect
+[15:19:52.745][127.0.0.1:18595] client connect
+[15:19:52.793][127.0.0.1:18596] client connect
+127.0.0.1:33205: POST https://api.anthropic.com/api/artifacts/mcp
+              << 404 Not Found 10b
+[15:19:52.968][127.0.0.1:18600] client connect
+[15:19:52.981][127.0.0.1:18601] client connect
+[15:19:52.984][127.0.0.1:18591] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:52.985][127.0.0.1:18593] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:52.986][127.0.0.1:18592] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.026][127.0.0.1:18602] client connect
+[15:19:53.069][127.0.0.1:18594] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.070][127.0.0.1:18595] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.071][127.0.0.1:18596] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:33209: POST https://api.anthropic.com/api/artifacts/mcp
+              << 404 Not Found 10b
+127.0.0.1:33207: POST https://api.anthropic.com/api/artifacts/mcp
+              << 404 Not Found 10b
+[15:19:53.341][127.0.0.1:33205] client disconnect
+[15:19:53.342][127.0.0.1:33205] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.344][127.0.0.1:21812] client disconnect
+[15:19:53.345][127.0.0.1:21812] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.345][127.0.0.1:18592] client disconnect
+[15:19:53.347][127.0.0.1:18592] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.347][127.0.0.1:18591] client disconnect
+[15:19:53.348][127.0.0.1:18593] client disconnect
+[15:19:53.350][127.0.0.1:18591] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.350][127.0.0.1:18593] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.355][127.0.0.1:33207] client disconnect
+[15:19:53.356][127.0.0.1:33207] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.358][127.0.0.1:21816] client disconnect
+[15:19:53.359][127.0.0.1:21816] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.360][127.0.0.1:18600] client disconnect
+[15:19:53.360][127.0.0.1:18601] client disconnect
+[15:19:53.361][127.0.0.1:18602] client disconnect
+127.0.0.1:33209: POST https://api.anthropic.com/api/artifacts/mcp
+ << Client disconnected.
+[15:19:53.364][127.0.0.1:33209] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.365][127.0.0.1:33209] client disconnect
+[15:19:53.365][127.0.0.1:18594] client disconnect
+[15:19:53.366][127.0.0.1:18595] client disconnect
+[15:19:53.367][127.0.0.1:21814] client disconnect
+[15:19:53.367][127.0.0.1:18596] client disconnect
+[15:19:53.368][127.0.0.1:18594] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.369][127.0.0.1:18595] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.370][127.0.0.1:21814] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:53.371][127.0.0.1:18596] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.069][127.0.0.1:30026] client connect
+[15:19:55.086][127.0.0.1:30026] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.126][127.0.0.1:30028] client connect
+[15:19:55.140][127.0.0.1:30028] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:30026: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+              << 200 OK 28.3k
+127.0.0.1:30028: POST https://api.anthropic.com/api/eval/sdk-zAZezfDKGoZuXXKe
+              << 200 OK 28.3k
+[15:19:55.608][127.0.0.1:48902] client connect
+[15:19:55.619][127.0.0.1:48902] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.656][127.0.0.1:48904] client connect
+[15:19:55.667][127.0.0.1:48904] server connect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.720][127.0.0.1:30026] client disconnect
+[15:19:55.722][127.0.0.1:30026] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+127.0.0.1:48902: GET https://api.anthropic.com/api/oauth/organizations/95b75…
+ << Client disconnected.
+[15:19:55.725][127.0.0.1:48902] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.726][127.0.0.1:48902] client disconnect
+[15:19:55.726][127.0.0.1:30028] client disconnect
+[15:19:55.728][127.0.0.1:48904] client disconnect
+[15:19:55.729][127.0.0.1:30028] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:19:55.730][127.0.0.1:48904] server disconnect api.anthropic.com:443 ([2607:6bc0::10]:443)
+[15:21:52.000][127.0.0.1:37763] client connect
+[15:21:52.002][127.0.0.1:47494] client disconnect
+[15:21:52.004][127.0.0.1:37764] client connect
+[15:21:52.004][127.0.0.1:47494] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:21:52.006][127.0.0.1:47495] client disconnect
+[15:21:52.007][127.0.0.1:47495] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:21:52.012][127.0.0.1:37764] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:21:52.013][127.0.0.1:37763] server connect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+127.0.0.1:37764: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:37763: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:37763: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:21:53.328][127.0.0.1:37768] client connect
+[15:21:53.330][127.0.0.1:47498] client disconnect
+[15:21:53.331][127.0.0.1:47498] server disconnect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+[15:21:53.337][127.0.0.1:37768] server connect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+127.0.0.1:37768: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+127.0.0.1:37764: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:37763: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:37763: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+127.0.0.1:37768: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+[15:25:07.821][127.0.0.1:28270] client connect
+[15:25:07.822][127.0.0.1:37763] client disconnect
+[15:25:07.823][127.0.0.1:28271] client connect
+[15:25:07.823][127.0.0.1:37763] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:25:07.825][127.0.0.1:37764] client disconnect
+[15:25:07.826][127.0.0.1:37764] server disconnect api.bridgemind.ai:443 ([2606:4700:20::ac43:4aec]:443)
+[15:25:07.843][127.0.0.1:28270] server connect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+[15:25:07.844][127.0.0.1:28271] server connect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+127.0.0.1:28270: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:28271: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:28271: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:25:09.157][127.0.0.1:28274] client connect
+[15:25:09.160][127.0.0.1:37768] client disconnect
+[15:25:09.163][127.0.0.1:37768] server disconnect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+[15:25:09.169][127.0.0.1:28274] server connect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+127.0.0.1:28274: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+127.0.0.1:28270: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:28271: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:28271: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+127.0.0.1:28270: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:28271: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:28271: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:27:00.663][127.0.0.1:28271] client disconnect
+[15:27:00.664][127.0.0.1:28270] client disconnect
+[15:27:00.664][127.0.0.1:28271] server disconnect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+[15:27:00.664][127.0.0.1:28270] server disconnect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+[15:27:49.330][127.0.0.1:18990] client connect
+[15:27:49.332][127.0.0.1:18991] client connect
+[15:27:49.345][127.0.0.1:18990] server connect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+[15:27:49.346][127.0.0.1:18991] server connect api.bridgemind.ai:443 ([2606:4700:20::681a:326]:443)
+127.0.0.1:18991: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:18990: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:18990: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+[15:27:50.665][127.0.0.1:18994] client connect
+[15:27:50.667][127.0.0.1:28274] client disconnect
+[15:27:50.668][127.0.0.1:28274] server disconnect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+[15:27:50.678][127.0.0.1:18994] server connect o4510171394408448.ingest.us.sentry.io:443 ([2600:1901:0:5e8a::]:443)
+127.0.0.1:18994: POST https://o4510171394408448.ingest.us.sentry.io/api/45120…
+              << 200 OK 41b
+127.0.0.1:18991: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:18990: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:18990: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b
+127.0.0.1:18991: GET https://api.bridgemind.ai/one/runtime-config
+              << 404 Not Found 245b
+127.0.0.1:18990: GET https://api.bridgemind.ai/auth/me
+              << 200 OK 971b
+127.0.0.1:18990: GET https://api.bridgemind.ai/one/entitlement
+              << 200 Forbidden 265b

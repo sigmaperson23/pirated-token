@@ -1,0 +1,4 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="9e2f80e0-41bd-5617-9a7e-51c050950947")}catch(e){}}();
+import{i as e,t}from"./react-SIfiwpqq.js";var n=e(t(),1);function r(e){let[t,r]=(0,n.useState)(()=>Date.now());return(0,n.useEffect)(()=>{if(e===null){r(Date.now());return}let t,n=()=>{let i=Date.now();r(i);let a=e-i;a<=0||(t=setTimeout(n,(a%1e3||1e3)+4))};return n(),()=>clearTimeout(t)},[e]),t}function i(e,t=1e3){let[r,i]=(0,n.useState)(()=>Date.now());return(0,n.useEffect)(()=>{if(e===null){i(Date.now());return}let n,r=()=>{let a=Date.now();i(a);let o=Math.max(0,a-e);n=setTimeout(r,t-o%t+4)};return r(),()=>clearTimeout(n)},[e,t]),r}export{i as n,r as t};
+//# debugId=9e2f80e0-41bd-5617-9a7e-51c050950947

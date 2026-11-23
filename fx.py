@@ -1,0 +1,6 @@
+NL = chr(10)
+t = open("README.md", encoding="utf-8").read()
+t = t.replace('fails loudly"' + NL + '" instead of', "fails loudly instead of")
+t = t.replace("which is why the plot below" + NL + "fails without it.", "which is why the cold start below fails without it.")
+open("README.md", "w", encoding="utf-8").write(t)
+print("ok")

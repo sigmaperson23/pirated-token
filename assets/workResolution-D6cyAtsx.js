@@ -1,0 +1,4 @@
+
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="e962bac7-4f50-5f2f-a5ba-024beca534ad")}catch(e){}}();
+import{a as e,i as t,r as n,s as r,t as i}from"./bridgeWorkResolution-BUDfgq8L.js";function a(e){return typeof e==`object`&&e&&`code`in e?e.code:void 0}async function o(o,s,c){let l=r.parse(s);c?.throwIfAborted();let u;try{u=await t(o.invoke(`voice_resolve_work`,{request:l}),c)}catch(e){throw c?.aborted?e:a(e)===`work_resolution_invalid`?new i(`The work decision is invalid.`):new n(`The work decision service is unavailable.`)}return e(u)}export{o as invokeResolveWork};
+//# debugId=e962bac7-4f50-5f2f-a5ba-024beca534ad

@@ -1,0 +1,189 @@
+0x140566b00 lea ecx, [rsp + 0x90] 
+0x140566b07 call 0x140892050 
+0x140566b0c jmp 0x140566b6a 
+0x140566b0e mov rax, r12 
+0x140566b11 neg rax 
+0x140566b14 jo 0x140566b6a 
+0x140566b16 lea rax, [r15 - 0x81] 
+0x140566b1d cmp rax, -0x81 
+0x140566b23 jbe 0x140566b51 
+0x140566b25 xor eax, eax 
+0x140566b27 nop word ptr [rax + rax] 
+0x140566b30 cmp r15, rax 
+0x140566b33 je 0x140566b9e 
+0x140566b35 movzx ecx, byte ptr [rsi + rax] 
+0x140566b39 inc rax 
+0x140566b3c cmp cl, 0x5f 
+0x140566b3f je 0x140566b30 
+0x140566b41 lea edx, [rcx - 0x5b] 
+0x140566b44 cmp dl, 0xe5 
+0x140566b47 ja 0x140566b30 
+0x140566b49 add cl, 0xc6 
+0x140566b4c cmp cl, 0xf6 
+0x140566b4f jae 0x140566b30 
+0x140566b51 test r12, r12 
+0x140566b54 je 0x140566b6a 
+0x140566b56 call qword ptr [rip + 0x1447074] 
+0x140566b5c mov rcx, rax 
+0x140566b5f xor edx, edx 
+0x140566b61 mov r8, rsi 
+0x140566b64 call qword ptr [rip + 0x144705e] 
+0x140566b6a xor eax, eax 
+0x140566b6c mov rdx, rdi 
+0x140566b6f add rsp, 0xc8 
+0x140566b76 pop rbx 
+0x140566b77 pop rbp 
+0x140566b78 pop rdi 
+0x140566b79 pop rsi 
+0x140566b7a pop r12 
+0x140566b7c pop r13 
+0x140566b7e pop r14 
+0x140566b80 pop r15 
+0x140566b82 ret  
+0x140566b83 mov r12, r14 
+0x140566b86 movabs rdi, 0x8000000000000001 
+0x140566b90 cmp r12, rdi 
+0x140566b93 jne 0x140566a65 
+0x140566b99 jmp 0x140566db2 
+0x140566b9e cmp r15, 0x14 
+0x140566ba2 jne 0x140566c17 
+0x140566ba4 movdqu xmm0, xmmword ptr [rsi] 
+0x140566ba8 movd xmm1, dword ptr [rsi + 0x10] 
+0x140566bad pcmpeqb xmm1, xmmword ptr [rip + 0x144e69b]  ; OKED
+0x140566bb5 pcmpeqb xmm0, xmmword ptr [rip + 0x144e6a3] 
+0x140566bbd pand xmm0, xmm1 
+0x140566bc1 pmovmskb eax, xmm0 
+0x140566bc5 mov edi, 0x14 
+0x140566bca cmp eax, 0xffff 
+0x140566bcf je 0x140566c77 
+0x140566bd5 movdqu xmm0, xmmword ptr [rsi] 
+0x140566bd9 movd xmm1, dword ptr [rsi + 0x10] 
+0x140566bde pcmpeqb xmm1, xmmword ptr [rip + 0x144f2ba]  ; RROR
+0x140566be6 pcmpeqb xmm0, xmmword ptr [rip + 0x144f2c2] 
+0x140566bee pand xmm0, xmm1 
+0x140566bf2 pmovmskb ecx, xmm0 
+0x140566bf6 xor eax, eax 
+0x140566bf8 cmp ecx, 0xffff 
+0x140566bfe lea rcx, [rip + 0x1490623]  ; VAL_VALIDATION_ERRORhttps://api.bridgemind.ai/autopilot/next
+0x140566c05 cmove rax, rcx 
+0x140566c09 test r12, r12 
+0x140566c0c jne 0x140566d02 
+0x140566c12 jmp 0x140566b6c 
+0x140566c17 cmp r15b, 0x16 
+0x140566c1b je 0x140566ccb 
+0x140566c21 cmp r15d, 0x19 
+0x140566c25 je 0x140566c88 
+0x140566c27 cmp r15d, 0x1d 
+0x140566c2b jne 0x140566cf7 
+0x140566c31 movdqu xmm0, xmmword ptr [rsi] 
+0x140566c35 movdqu xmm1, xmmword ptr [rsi + 0xd] 
+0x140566c3a pcmpeqb xmm1, xmmword ptr [rip + 0x144e5ee]  ; ENVELOPE_INVALIDAUTH_REFRESH_ENVOKED
+0x140566c42 pcmpeqb xmm0, xmmword ptr [rip + 0x144e5f6]  ; AUTH_REFRESH_ENVOKED
+0x140566c4a pand xmm0, xmm1 
+0x140566c4e pmovmskb eax, xmm0 
+0x140566c52 cmp eax, 0xffff 
+0x140566c57 jne 0x140566cf7 
+0x140566c5d lea rax, [rip + 0x14ced38]  ; AUTH_REFRESH_ENVELOPE_INVALIDAUTH_REFRESH_TRANSIENT
+0x140566c64 mov edi, 0x1d 
+0x140566c69 test r12, r12 
+0x140566c6c jne 0x140566d02 
+0x140566c72 jmp 0x140566b6c 
+0x140566c77 lea rax, [rip + 0x14ced0a]  ; AUTH_REFRESH_REVOKEDAUTH_REFRESH_ENVELOPE_INVALIDAUTH_REFRESH_TRANSIEN
+0x140566c7e test r12, r12 
+0x140566c81 jne 0x140566d02 
+0x140566c83 jmp 0x140566b6c 
+0x140566c88 movdqu xmm0, xmmword ptr [rsi] 
+0x140566c8c movdqu xmm1, xmmword ptr [rsi + 9] 
+0x140566c91 pcmpeqb xmm1, xmmword ptr [rip + 0x144e577]  ; RIPTION_REQUIREDBIZ_SUBSCRIPTIONENVELOPE_INVALIDAUTH_REFRESH_ENVOKED
+0x140566c99 pcmpeqb xmm0, xmmword ptr [rip + 0x144e57f]  ; BIZ_SUBSCRIPTIONENVELOPE_INVALIDAUTH_REFRESH_ENVOKED
+0x140566ca1 pand xmm0, xmm1 
+0x140566ca5 pmovmskb ecx, xmm0 
+0x140566ca9 xor eax, eax 
+0x140566cab cmp ecx, 0xffff 
+0x140566cb1 lea rcx, [rip + 0x145c550]  ; BIZ_SUBSCRIPTION_REQUIRED
+0x140566cb8 cmove rax, rcx 
+0x140566cbc mov edi, 0x19 
+0x140566cc1 test r12, r12 
+0x140566cc4 jne 0x140566d02 
+0x140566cc6 jmp 0x140566b6c 
+0x140566ccb movdqu xmm0, xmmword ptr [rsi] 
+0x140566ccf movdqu xmm1, xmmword ptr [rsi + 6] 
+0x140566cd4 pcmpeqb xmm1, xmmword ptr [rip + 0x144e594] 
+0x140566cdc pcmpeqb xmm0, xmmword ptr [rip + 0x144e59c] 
+0x140566ce4 pand xmm0, xmm1 
+0x140566ce8 pmovmskb eax, xmm0 
+0x140566cec cmp eax, 0xffff 
+0x140566cf1 je 0x140566d7f 
+0x140566cf7 xor eax, eax 
+0x140566cf9 test r12, r12 
+0x140566cfc je 0x140566b6c 
+0x140566d02 mov rbx, rax 
+0x140566d05 call qword ptr [rip + 0x1446ec5] 
+0x140566d0b mov rcx, rax 
+0x140566d0e xor edx, edx 
+0x140566d10 mov r8, rsi 
+0x140566d13 call qword ptr [rip + 0x1446eaf] 
+0x140566d19 mov rax, rbx 
+0x140566d1c jmp 0x140566b6c 
+0x140566d21 mov qword ptr [rsp + 0x20], 0x16 
+0x140566d2a lea rcx, [rsp + 0x60] 
+0x140566d2f call 0x1414c9e60 
+0x140566d34 mov r8, rdx 
+0x140566d37 lea rcx, [rsp + 0x20] 
+0x140566d3c mov rdx, rax 
+0x140566d3f call 0x14199c760 
+0x140566d44 mov qword ptr [rsp + 0x90], rax 
+0x140566d4c mov qword ptr [rsp + 0x88], rdi 
+0x140566d54 shl r12, 1 
+0x140566d57 test r12, r12 
+0x140566d5a je 0x140566980 
+0x140566d60 mov rdi, rax 
+0x140566d63 call qword ptr [rip + 0x1446e67] 
+0x140566d69 mov rcx, rax 
+0x140566d6c xor edx, edx 
+0x140566d6e mov r8, rsi 
+0x140566d71 call qword ptr [rip + 0x1446e51] 
+0x140566d77 mov rax, rdi 
+0x140566d7a jmp 0x140566980 
+0x140566d7f lea rax, [rip + 0x14cec33]  ; AUTH_REFRESH_TRANSIENT
+0x140566d86 mov edi, 0x16 
+0x140566d8b test r12, r12 
+0x140566d8e jne 0x140566d02 
+0x140566d94 jmp 0x140566b6c 
+0x140566d99 lea r8, [rip + 0x18ef048] 
+0x140566da0 lea rcx, [rsp + 0x48] 
+0x140566da5 lea rdx, [rsp + 0x47] 
+0x140566daa call 0x141955450 
+0x140566daf mov rsi, rax 
+0x140566db2 lea rdx, [rsp + 0x48] 
+0x140566db7 mov rcx, rsi 
+0x140566dba call 0x1419562a0 
+0x140566dbf jmp 0x140566966 
+0x140566dc4 lea rcx, [rip + 0x1455fbd]  ; codesignal
+0x140566dcb mov edx, 4 
+0x140566dd0 call 0x14194a860 
+0x140566dd5 jmp 0x140566625 
+0x140566dda mov qword ptr [rsp + 0x20], 6 
+0x140566de3 jmp 0x1405669a7 
+0x140566de8 int3  
+0x140566de9 int3  
+0x140566dea int3  
+0x140566deb int3  
+0x140566dec int3  
+0x140566ded int3  
+0x140566dee int3  
+0x140566def int3  
+0x140566df0 push rsi 
+0x140566df1 push rdi 
+0x140566df2 push rbx 
+0x140566df3 sub rsp, 0xc30 
+0x140566dfa mov rsi, rcx 
+0x140566dfd mov word ptr [rsp + 0x130], 0 
+0x140566e07 mov qword ptr [rsp + 0x120], 2 
+0x140566e13 mov qword ptr [rsp + 0x128], 0 
+0x140566e1f mov qword ptr [rsp + 0xf0], 0 
+0x140566e2b mov qword ptr [rsp + 0xf8], 8 
+0x140566e37 xorps xmm0, xmm0 
+0x140566e3a movups xmmword ptr [rsp + 0x100], xmm0 
+0x140566e42 mov qword ptr [rsp + 0x110], 8 
+0x140566e4e mov qword ptr [rsp + 0x118], 0 
